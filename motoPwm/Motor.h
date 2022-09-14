@@ -3,9 +3,9 @@
 
 class Motor{
 private:
-int pinR,pinL,resolution,canalR,canalL;
+int pinR,pinL,resolution,canalR,canalL,frequency;
 public:
-Motor(pinR,pinL,canalR,canalL);
+Motor(int pinR,int pinL,int canalR,int canalL,int resolution);
 
 void GoAdvance (int speed);
 
