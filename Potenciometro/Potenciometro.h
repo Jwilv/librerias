@@ -4,10 +4,11 @@
 class POTENCIOMETRO{
     private:
     int pin;
+    int limitBits = 4; //para tener un valor max de 255
 
     public:
     POTENCIOMETRO(int pin);
-    float GetValor();
+    int GetValor();
 
 }
 
