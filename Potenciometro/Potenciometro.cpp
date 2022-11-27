@@ -6,6 +6,6 @@ POTENCIOMETRO :: POTENCIOMETRO(int pin){
     this->pin = pin;
 }
 
-float POTENCIOMETRO :: GetValor(){
+int POTENCIOMETRO :: GetValor(){
     return analogRead(pin) / limitBits;
 }
