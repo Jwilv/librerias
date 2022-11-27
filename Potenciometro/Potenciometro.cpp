@@ -7,5 +7,5 @@ POTENCIOMETRO :: POTENCIOMETRO(int pin){
 }
 
 float POTENCIOMETRO :: GetValor(){
-    return analogRead(pin);
+    return analogRead(pin) / limitBits;
 }
